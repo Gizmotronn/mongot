@@ -1,0 +1,163 @@
+/*========================
+    Service Area 
+=========================*/
+
+.has-center-content{
+    .has-centerinner{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        @media #{$sm-layout}{
+            display: block;
+        }
+        .thumb{
+            img{
+                width: 100%;
+                -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                display: inline-block;
+            }
+        }
+        .content{
+            padding: 41px 20px;
+            text-align: left;
+            flex-basis: 50%;
+            
+            h6{
+                font-size: 14px;
+                color: $theme-color;
+            }
+            h1{
+                font-size: 38px;
+                font-weight: 600;
+                color: #161616;
+                position: relative;
+                a {
+                    color: #161616;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+                @media #{$md-layout}{
+                    font-size: 34px;
+                }
+                @media #{$sm-layout}{
+                    font-size: 18px;
+                }
+            }
+            .read-more-btn{
+                a{
+                    -webkit-transition: 0.4s ease-in-out;
+                    -o-transition: 0.4s ease-in-out;
+                    transition: 0.4s ease-in-out;
+                    color: #161616;
+                    span{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    i{
+                        font-size: 12px;
+                        margin-left: 8px;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+
+.slick-arrow-center{
+    position: relative;
+    .slick-btn{
+        position: absolute;
+        top: 50%;
+        -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        border: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.01);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.01);
+        z-index: 2;
+        outline: none;
+        text-align: center;
+        line-height: 123px;
+        width: 55px;
+        height: 100px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 0;
+        i {
+            font-size: 30px;
+            color: #fff;
+            display: block;
+            line-height: 91px;
+        }
+        &::before{
+            display: none;
+        }
+
+        &.slick-prev {
+            border-bottom-right-radius: 108px;
+            border-top-right-radius: 108px;
+            left: 35px;
+        }
+        &.slick-next {
+            border-bottom-left-radius: 108px;
+            border-top-left-radius: 108px;
+            right: 35px;
+            left: auto;
+        }
+        &:hover{
+            background-color: $theme-color;
+            color: #222222;
+        }
+    }
+}
+
+.slick-gutter-35 .slick-slide {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+
+.brand{
+    text-align: center;
+}
+
+.brand-area .slick-slide img {
+    display: inline-block;
+}
+
+/*=======================
+    Video Area
+=========================*/
+.video-wrapper{
+    h1 {
+        @media #{$lg-layout} {
+            font-size: 45px
+        }
+        @media #{$sm-layout} {
+            font-size: 36px
+        }
+    }
+}
+
+@media #{$sm-layout}{
+    .slick-gutter-35 .slick-slide {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+

@@ -1,0 +1,88 @@
+/*========================
+    Contact Area 
+==========================*/
+
+// Contact Form Style One
+.contact__form--1 {
+    input {
+        font-size: 14px;
+        padding: 0;
+        width: 100%;
+        line-height: inherit;
+        height: auto;
+        border: 0 none;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+        font-style: italic;
+        margin-bottom: 14px;
+        color: #111111;
+        &[type=submit] {
+            background-color: #2f2f2f;
+            text-decoration: none;
+            padding: 23px;
+            border-radius: 0;
+            @extend %block;
+            width: 100%;
+            font-size: 14px;
+            @extend %fontWeight700;
+            @extend %textUpper;
+            line-height: 20px;
+            color: #fff;
+            @extend %transition;
+            border: 0 none;
+            font-style: inherit;
+            cursor: pointer;
+            &:hover {
+                @extend %bgthemecolor;
+            }
+        }
+    }
+    textarea {
+        @extend input;
+        height: 146px;
+        min-height: 146px;
+    }
+}
+
+.ht-gmap2 {
+    height: 470px;
+    width: 100%;
+}
+
+
+.footer-widget .footer-content .input-box input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #111111;
+}
+
+.footer-widget .footer-content .input-box input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #111111;
+}
+
+.footer-widget .footer-content .input-box input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #111111;
+}
+
+.footer-widget .footer-content .input-box input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #111111;
+}
+
+.pt-contact {
+    p {
+        a {
+            color: #111111;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+/*=======================
+    Slick Dots
+=========================*/
+
+.partlo-dots{
+    position: relative;
+    .slick-dots{
+        bottom: -50px;
+        li{
+            position: relative;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 8px;
+            padding: 0;
+            cursor: pointer;
+            background: #ddd;
+            border-radius: 100%;
+            button{
+                &::before{
+                    display: none;
+                }
+            }
+            &.slick-active{
+                background: #000000;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

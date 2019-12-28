@@ -1,0 +1,379 @@
+// Testimonial Style 1
+.testimonial_style--1{
+    background: #fff;
+    padding: 44px 40px;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+
+    @media #{$lg-layout} {
+        padding: 44px 30px;
+    }
+
+    @media #{$md-layout} {
+        padding: 36px 18px;
+    }
+    @media #{$sm-layout} {
+        padding: 33px 28px;
+    }
+
+    .content{
+        p{
+          
+        }
+        .testimonial-info{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 26px;
+            .post-thumbnail{
+                -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                img{
+                    border-radius: 50%;
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+            .clint-info{
+                -webkit-box-flex: 1;
+                -webkit-flex-grow: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                margin-left: 20px;
+                h6{
+                    font-size: 18px;
+                    line-height: 1.388;
+                    margin-bottom: 6px;
+                    color: #222222;
+                    font-weight: 600;
+                    font-family: $body-font;
+                }
+                span{
+                    color: $body-color;
+                    font-weight: 500;
+                    line-height: 1.58;
+                    font-size: 14px;
+                    font-family: $body-font;
+                }
+            }
+        }
+        .testimonial-quote{
+            padding: 2px 5px 0 0;
+            font-size: 28px;
+            text-align: right;
+            line-height: 0;
+            span{
+                color: $theme-color;
+                font-weight: 900;
+            }
+        }
+    }
+    &:hover{
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,.07);
+        color: #fff;
+        background: $theme-color;
+        .content{
+            p{
+                color: #ffffff;
+                span{
+                    &.theme-color{
+                        color: #ffffff;
+                    }
+                }
+            }
+            .testimonial-info{
+                .clint-info{
+                    h6{
+                        color: #ffffff;
+                    }
+                    span{
+                        color: #ffffff;
+                    }
+                }
+            }
+            .testimonial-quote{
+                span{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    &.hover-transparent{
+        &:hover{
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    &.space-large--topbottom{
+        padding: 58px 60px 122px;
+
+        @media #{$lg-layout} {
+            padding: 45px 30px 50px;
+        }
+        @media #{$md-layout} {
+            padding: 45px 30px 50px;
+        }
+        @media #{$sm-layout} {
+            padding: 45px 30px 50px;
+        }
+
+    }
+
+    &.bg-dark{
+        background: #000;
+        color: #fff;
+        .content{
+            p{
+                font-size: 20px;
+                line-height: 1.75;
+                color: #fff;
+            }
+            .testimonial-info{
+                .clint-info{
+                    h6{
+                        color: #fff;
+                    }
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+            .testimonial-quote{
+                padding: 52px 0 0;
+                font-size: 28px;
+                text-align: right;
+                line-height: 0;
+                span{
+                    font-size: 28px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+    // Theme Color 2
+    &.theme-color-2{
+        .content{
+            p{
+                color: $body-color;
+            }
+        }
+        &:hover{
+            color: #fff;
+            .content{
+                p{
+                    color: #ffffff;
+                }
+                .testimonial-quote{
+                    span{
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    // Theme Color 2
+    &.purple-color-2{
+        .content{
+            p{
+                color: $body-color;
+            }
+            .testimonial-quote{
+                span{
+                    color: $theme-color;
+                }
+            }
+        }
+        &:hover{
+            background: $theme-color;
+            color: #fff;
+            .content{
+                p{
+                    color: #ffffff;
+                    span{
+                        color: #ffffff;
+                    }
+                }
+                .testimonial-quote{
+                    span{
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+ Testimonial Horizontal Area
+===================================*/
+
+.testimonial--horizontal--active{
+    position: relative;
+    padding-right: 210px;
+    margin-left: 32px;
+
+    @media #{$sm-layout} {
+        padding-right: 90px;
+        padding-bottom: 40px;
+    }
+    @media #{$md-layout} {
+        padding-right: 30px;
+        padding-bottom: 54px;
+    }
+
+    @media #{$lg-layout} {
+        padding-right: 30px;
+        padding-bottom: 54px;
+    }
+
+    @media #{$sm-layout} {
+        padding-right: 0px;
+        padding-bottom: 0;
+        margin-left: 0px;
+    }
+
+}
+
+
+.testimonial--horizontal--active .swiper-pagination.swiper-pagination-progressbar {
+    position: absolute;
+    bottom: -97px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    top: auto;
+}
+
+
+.testimonial--horizontal--active .swiper-pagination.swiper-pagination-progressbar {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    height: 3px;
+    width: 400px;
+    max-width: 100%;
+    background: #d8d8d8;
+}
+
+
+.testimonial--horizontal--active .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: $theme-color;
+    height: 100%;
+    position: absolute;
+}
+
+.testimonial--horizontal--active .swiper-pagination-progressbar .swiper-pagination-progressbar-fill:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: inherit;
+}
+
+
+
+.testimonial--horizontal--active .swiper-pagination.swiper-pagination-progressbar {
+    position: absolute;
+    bottom: -97px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    top: auto;
+}
+
+
+.testimonial--horizontal--active .swiper-pagination.swiper-pagination-custom {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    height: 3px;
+    width: 400px;
+    max-width: 100%;
+    background: #d8d8d8;
+}
+
+
+.testimonial--horizontal--active .swiper-pagination-custom .progressbar .filled {
+    background: $theme-color;
+    height: 100%;
+    position: absolute;
+}
+
+.testimonial--horizontal--active .swiper-pagination-custom .progressbar .filled:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

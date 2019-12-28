@@ -1,0 +1,87 @@
+/*=======================
+Header DEfault CSs 
+=========================*/
+
+.haeder-default {
+    .mainmenu__nav {
+        ul {
+            &.primary-menu {
+                @extend %liststyle;
+                @include flexbox;
+                @include justify-content(center);
+
+                > li {
+                    > a {
+                        display: -webkit-box;
+                        display: -moz-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-align: center;
+                        -moz-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        font-size: 18px;
+                        font-weight: 700;
+                        padding: 0 20px;
+
+                        @media #{$laptop-device} {
+                            font-size: 16px;
+                            font-weight: 700;
+                            padding: 0 13px;
+                        }
+                    }
+                }
+                > li{
+                    > a{
+                        padding-top: 31px;
+                        padding-bottom: 31px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Light Logo Vertion
+.light-logo-version {
+    .mainmenu__nav {
+        .primary-menu {
+            li {
+                a {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .header-icon {
+        a {
+            color: #ffffff;
+            i{
+                color: #ffffff; 
+            }
+        }
+    }
+}
+
+// Black Logo Version
+.black-logo-version {
+    .mainmenu__nav {
+        .primary-menu {
+            li {
+                a {
+                    @extend %textBlack22;
+                }
+            }
+        }
+    }
+
+    .header-icon{
+        a{
+            @extend %textBlack22;
+        }
+    } 
+}

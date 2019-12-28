@@ -1,0 +1,137 @@
+/*=====================
+    BLog Sidebar 
+=======================*/
+
+.bl-widget{
+    border: 1px solid #e5e5e5;
+    &.author{
+        padding: 29px 20px;
+        padding-bottom: 0;
+        .inner{
+            text-align: center;
+            .thumb {
+                img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 100%;
+                    margin-bottom: 16px;
+                }
+            }
+            .info{
+                h5{
+
+                }
+                .degne{
+                    color: #a1a1a1;
+                    font-size: 13px;
+                    font-style: italic;
+                    margin-bottom: 6px;
+                }
+                p{
+
+                }
+                .social-link{
+                    a{
+                        color: #aeafb4;
+                        display: inline-block;
+                        margin: 0 10px;
+                        font-size: 19px;
+                        margin-bottom: 10px;
+                        transition: 0.4s;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                        i{
+
+                        }
+                    }
+                }
+
+                .autor-meta{
+                    border-top: 1px solid #e5e5e5;
+                    margin: 0 -20px;
+                    span{
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #222;
+                        padding: 10px 12px;
+                        strong{
+                            color: #5a5c68;
+                            display: block;
+                        }
+                        & + span{
+                            border-left: 1px solid #e5e5e5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.post{
+        padding: 20px;
+        text-align: left;
+        .inner{
+            .post-list{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                margin-bottom: -20px;
+                margin-top: 30px;
+                li{
+                    margin-bottom: 20px;
+                    a {
+                        color: #222;
+                        display: block;
+                        line-height: 23px;
+                        text-transform: uppercase;
+                        margin-bottom: 6px;
+                        transition: 0.4s;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                    }
+                    span {
+                        color: #bab9be;
+                        i {
+                            padding-right: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.quote{
+        padding: 20px;
+        .inner{
+            .post-quote {
+                .quote-info {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    i {
+                        color: $theme-color;
+                        padding-right: 15px;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,293 @@
+/*===========================
+    Start Footer Area 
+=============================*/
+
+/*=======================
+    Footer Default 
+==========================*/
+
+.footer-default {
+    padding: 0 90px 0;
+
+    @media #{$md-layout} {
+        padding: 0 60px 0;
+    }
+
+    @media #{$sm-layout} {
+        padding: 0 40px 0;
+    }
+
+    .footer-top-area {
+        color: #a2a2a2;
+        padding: 70px 0px 0;
+    }
+
+    .copyright-area {
+        padding: 13px 0;
+        padding-top: 37px;
+
+        .content {
+            p {
+                font-size: 12px;
+                color: #a2a2a2;
+            }
+
+            .cp-link {
+                @extend %liststyle;
+
+                li {
+                    margin-right: calc(25px/2);
+                    margin-left: calc(25px/2);
+
+                    @media #{$md-layout} {
+                        margin-right: calc(18px/2);
+                        margin-left: calc(18px/2);
+                    }
+
+                    @media #{$sm-layout} {
+                        margin-right: calc(18px/2);
+                        margin-left: calc(18px/2);
+                    }
+
+                    a {
+                        color: #a2a2a2;
+                        @extend %transition;
+                        font-size: 14px;
+
+                        &:hover {
+                            @extend %themecolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*=========================
+    Start Footer Widget
+===========================*/
+
+.footer-widget {
+    .logo {
+        a {
+            img {
+                
+            }
+        }
+    }
+
+    .ft-title {
+        margin: 0 0 30px;
+    }
+
+    .footer-content {
+        p {
+            &.pra {
+                padding: 26px 0 28px;
+                color: #a2a2a2;
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+
+        .footer-social-icon {
+            a {
+                margin-right: 15px;
+                font-size: 14px;
+                color: rgba(255, 255, 255, .36);
+                @extend %transition;
+
+                &:hover {
+                    @extend %themecolor;
+                }
+            }
+        }
+
+
+        .input-box{
+            position: relative;
+            input{
+                background: #666666;
+                border: 0 none;
+                color: #fff;
+                height: 49px;
+                padding: 0 30px;
+                border-radius: 7px;
+                padding-right: 40px;
+            }
+            button{
+                position: absolute;
+                top: 50%;
+                right: 19px;
+                transform: translateY(-50%);
+                padding: 0;
+                margin: 0;
+                border: 0 none;
+                i{
+                    color: #ffffff;
+                }
+            }
+        }
+        
+    }
+
+    .quick-link {
+        @extend %liststyle;
+
+        li {
+            a {
+                color: #a2a2a2;
+                font-size: 14px;
+                line-height: 30px;
+                @extend %transition;
+
+                &:hover {
+                    @extend %textwhite;
+                }
+            }
+
+            &:not(:last-child) {
+                padding-bottom: calc(5px/2);
+            }
+
+            &:not(:last-child) {
+                margin-top: calc(5px/2);
+            }
+        }
+    }
+
+    .address {
+        p {
+            color: #a2a2a2;
+            font-size: 14px;
+            line-height: 2em;
+
+            a {
+                color: #a2a2a2;
+                font-size: 12px;
+                line-height: 2em;
+            }
+
+            &:not(:last-child) {
+                padding-bottom: calc(5px/2);
+            }
+
+            &:not(:last-child) {
+                margin-top: calc(5px/2);
+            }
+        }
+    }
+
+    
+
+    &.footer-column {
+        &__a {
+            width: 28%;
+
+            .inner {
+                width: 370px;
+                max-width: 100%;
+                margin-right: auto;
+
+                @media #{$smlg-device} {
+                    width: auto;
+                }
+            }
+        }
+
+        &__b {
+            width: 15%;
+        }
+
+        &__c {
+            width: 26.997%;
+
+            .inner {
+                width: 330px;
+
+                @media #{$smlg-device} {
+                    width: auto;
+                }
+
+                max-width: 100%;
+                margin-left: auto;
+            }
+        }
+    }
+
+    &.widget_style--2 {
+        .ft-title {
+            position: relative;
+            padding-bottom: 20px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 2px;
+                background: #2f21b3;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        .quick-link {
+            li {
+                a {
+                    color: #535353;
+                    font-size: 14px;
+                    line-height: 30px;
+                    @extend %transition;
+                    display: block;
+
+                    &:hover {
+                        @extend %themecolor;
+                    }
+                }
+
+                &:not(:last-child) {
+                    padding-bottom: calc(25px/2);
+                }
+
+                &:not(:last-child) {
+                    margin-top: calc(25px/2);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.footer-widget .footer-content .input-box input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+}
+.footer-widget .footer-content .input-box input::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+}
+.footer-widget .footer-content .input-box input:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff;
+}
+.footer-widget .footer-content .input-box input:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

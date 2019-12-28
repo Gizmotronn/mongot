@@ -1,0 +1,124 @@
+
+
+
+
+
+
+
+
+.progress-charts{
+    overflow: hidden;
+    h6{
+        &.heading{
+            margin-bottom: 13px;
+            text-transform: uppercase;
+            span{
+                &.percent-label{
+                    color: #222;
+                    font-weight: 600;
+                }
+            }
+        }
+        &.custom-color--2{
+            color: #000;
+        }
+
+        &.custom-color--3{
+            color: #66a7e8;
+        }
+
+        &.custom-color--4{
+            color: #f10;
+        }
+
+        &.custom-color--5{
+            color: #23a455;
+        }
+
+        &.custom-color--6 {
+            color: #a0a0a0;
+        }
+
+        &.custom-color--7 {
+            color: #000;
+        }
+
+        &.custom-color--8 {
+            color: #7971ea;
+        }
+    }
+    .progress{
+        height: 6px;
+        overflow: visible;
+        font-size: 14px;
+        background-color: #eee;
+        border-radius: 0;
+        &--4 {
+            height: 4px;
+        }
+        &--8 {
+            height: 8px;
+        }
+        &--10 {
+            height: 10px;
+        }
+
+        &.bg-color-1{
+            background-color: rgba(102,167,232,.3);
+        }
+
+        &.bg-color-2 {
+            background-color: rgba(244,0,61,.3);
+        }
+
+        &.bg-color-3 {
+            background-color: rgba(35,164,85,.3);
+        }
+
+        .progress-bar{
+            overflow: visible;
+            position: relative;
+            background: $theme-color;
+
+            &.custom-color--2 { 
+                background-color: #000;
+            }
+
+            &.custom-color--3{
+                background-color: #66a7e8;
+            }
+
+            &.custom-color--4 {
+                background-color: #f10;
+            }
+
+            &.custom-color--5 {
+                background-color: #23a455;
+            }
+
+            &.custom-color--6 {
+                background-color: #a0a0a0;
+            }
+
+            &.custom-color--7 {
+                background-color: #000;
+            }
+
+            &.custom-color--8 {
+                background-color: #7971ea;
+            }
+
+
+            span{
+                &.percent-label{
+                    position: absolute;
+                    color: #222;
+                    right: -7px;
+                    top: -35px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

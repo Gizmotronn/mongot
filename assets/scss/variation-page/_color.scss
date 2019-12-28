@@ -1,0 +1,18 @@
+/*=================================
+Variation Color Style 
+===================================*/
+
+@for $i from 1 through length($colorList){
+    body.template-color-#{$i}{
+        .theme-color{
+            color: nth($colorList, $i);
+        }
+    }
+}
+
+
+
+
+
+
+
